@@ -50,161 +50,206 @@ class MyApp extends StatelessWidget {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          Container(
-                            height: 400,
-                            width: 300,
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(30),
-                              image: const DecorationImage(
-                                  image: AssetImage("assets/cr7.jpg"),
-                                  fit: BoxFit.fitHeight),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Container(
-                                  height: 150,
-                                  width: 300,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(15.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Cristiano Ronaldo: Manchester United reach agreement with Juventus to re-sign forward",
-                                          textAlign: TextAlign.left,
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 15),
+                          Stack(
+                            children: [
+                              Container(
+                                height: 400,
+                                width: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(30),
+                                  image: const DecorationImage(
+                                      image: AssetImage("assets/cr7.jpg"),
+                                      fit: BoxFit.fitHeight),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      height: 150,
+                                      width: 300,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(15),
+                                      ),
+                                      child: const Padding(
+                                        padding: EdgeInsets.all(15.0),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Cristiano Ronaldo: Manchester United reach agreement with Juventus to re-sign forward",
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontSize: 15),
+                                            ),
+                                            SizedBox(
+                                              height: 25,
+                                            ),
+                                            Text(
+                                              "Rafal Leo  12 Sep, 2022",
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w400,
+                                                  fontSize: 12),
+                                            ),
+                                          ],
                                         ),
-                                        SizedBox(
-                                          height: 25,
-                                        ),
-                                        Text(
-                                          "Rafal Leo  12 Sep, 2022",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 12),
-                                        ),
-                                      ],
+                                      ),
                                     ),
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                top: 10,
+                                right: 10,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.bookmark_outline_rounded,
+                                    color: Colors.white,
                                   ),
                                 ),
-                              ],
-                            ),
+                              )
+                            ],
                           ),
                           const SizedBox(
                             width: 25,
                           ),
-                          Container(
-                            height: 400,
-                            width: 300,
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(30),
-                              image: const DecorationImage(
-                                  image: AssetImage("assets/goats.jpg"),
-                                  fit: BoxFit.fitHeight),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Container(
-                                  height: 150,
-                                  width: 300,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(15.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "When Messi Met Ronaldo in the 2023 Riyadh Season Cup: Will They Face Off Again?",
-                                          textAlign: TextAlign.left,
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 15),
+                          Stack(
+                            children: [
+                              Container(
+                                height: 400,
+                                width: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(30),
+                                  image: const DecorationImage(
+                                      image: AssetImage("assets/goats.jpg"),
+                                      fit: BoxFit.fitHeight),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      height: 150,
+                                      width: 300,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(15),
+                                      ),
+                                      child: const Padding(
+                                        padding: EdgeInsets.all(15.0),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "When Messi Met Ronaldo in the 2023 Riyadh Season Cup: Will They Face Off Again?",
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontSize: 15),
+                                            ),
+                                            SizedBox(
+                                              height: 25,
+                                            ),
+                                            Text(
+                                              "Fabrizio  12 Sep, 2022",
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w400,
+                                                  fontSize: 12),
+                                            ),
+                                          ],
                                         ),
-                                        SizedBox(
-                                          height: 25,
-                                        ),
-                                        Text(
-                                          "Fabrizio  12 Sep, 2022",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 12),
-                                        ),
-                                      ],
+                                      ),
                                     ),
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                top: 10,
+                                right: 10,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.bookmark_outline_rounded,
+                                    color: Colors.white,
                                   ),
                                 ),
-                              ],
-                            ),
+                              )
+                            ],
                           ),
                           const SizedBox(
                             width: 25,
                           ),
-                          Container(
-                            height: 400,
-                            width: 300,
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(30),
-                              image: const DecorationImage(
-                                  image: AssetImage("assets/mbappe.jpg"),
-                                  fit: BoxFit.fitHeight),
-                            ),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.end,
-                              children: [
-                                Container(
-                                  height: 150,
-                                  width: 300,
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(15),
-                                  ),
-                                  child: const Padding(
-                                    padding: EdgeInsets.all(15.0),
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                          "Kylian Mbappe targets Ligue 1 scoring record with PSG next season",
-                                          textAlign: TextAlign.left,
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w600,
-                                              fontSize: 15),
+                          Stack(
+                            children: [
+                              Container(
+                                height: 400,
+                                width: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(30),
+                                  image: const DecorationImage(
+                                      image: AssetImage("assets/mbappe.jpg"),
+                                      fit: BoxFit.fitHeight),
+                                ),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    Container(
+                                      height: 150,
+                                      width: 300,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.circular(15),
+                                      ),
+                                      child: const Padding(
+                                        padding: EdgeInsets.all(15.0),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "Kylian Mbappe targets Ligue 1 scoring record with PSG next season",
+                                              textAlign: TextAlign.left,
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w600,
+                                                  fontSize: 15),
+                                            ),
+                                            SizedBox(
+                                              height: 45,
+                                            ),
+                                            Text(
+                                              "Emi Martinez  12 Sep, 2022",
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w400,
+                                                  fontSize: 12),
+                                            ),
+                                          ],
                                         ),
-                                        SizedBox(
-                                          height: 45,
-                                        ),
-                                        Text(
-                                          "Emi Martinez  12 Sep, 2022",
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 12),
-                                        ),
-                                      ],
+                                      ),
                                     ),
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                top: 10,
+                                right: 10,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: const Icon(
+                                    Icons.bookmark_outline_rounded,
+                                    color: Colors.white,
                                   ),
                                 ),
-                              ],
-                            ),
+                              )
+                            ],
                           ),
                         ],
                       ),
