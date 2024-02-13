@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
       title: "News App",
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.blueGrey[50],
+          backgroundColor: Colors.grey[200],
           appBar: AppBar(
-            backgroundColor: Colors.blueGrey[50],
-            shadowColor: Colors.grey,
+            backgroundColor: Colors.grey[200],
+            shadowColor: Colors.white,
             title: const Text(
               "Hi, Jeeshan Ahamed",
               style: TextStyle(
@@ -298,8 +298,219 @@ class MyApp extends StatelessWidget {
                   const SizedBox(
                     height: 25,
                   ),
-                  const Text(
-                      "LoassssssssssssdmkfnsnjkdsasdsdefafdfdvtttfEFegfwyfgeyWEGFHEFGYUWLwehfVEHJSHFVYsevyHEVyuefvwyfveyfWYUFVWYFasadasewfwefwefwfrgefwefafrfergaeferfraferggtrsagrgaregafervthyjyjikydgsSADSADSDFWefrfrSAaXEFEWRWVwewecasahdgybvasffayascdqywcaysvadvfyelWEDLFeyfdlyweduw")
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 75,
+                          width: 90,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: const DecorationImage(
+                                  image: AssetImage("assets/malinga.jpg"),
+                                  fit: BoxFit.cover)),
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        const SizedBox(
+                          height: 75,
+                          width: 225,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Malinga has taken 10 wickets in a match as a record.",
+                                style: TextStyle(fontWeight: FontWeight.w600),
+                                textAlign: TextAlign.justify,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.calendar_today,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "12 Sep 2022",
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12),
+                                  ),
+                                  SizedBox(
+                                    width: 45,
+                                  ),
+                                  Icon(
+                                    Icons.access_time,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "5 Min read",
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 75,
+                          width: 90,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: const DecorationImage(
+                                  image: AssetImage("assets/messi.jpg"),
+                                  fit: BoxFit.cover)),
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        const SizedBox(
+                          height: 75,
+                          width: 225,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Messi received his 8th BallonDor at France Gala.",
+                                style: TextStyle(fontWeight: FontWeight.w600),
+                                textAlign: TextAlign.justify,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.calendar_today,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "12 Sep 2022",
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12),
+                                  ),
+                                  SizedBox(
+                                    width: 45,
+                                  ),
+                                  Icon(
+                                    Icons.access_time,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "5 Min read",
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 75,
+                          width: 90,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: const DecorationImage(
+                                  image: AssetImage("assets/manager.png"),
+                                  fit: BoxFit.cover)),
+                        ),
+                        const SizedBox(
+                          width: 20,
+                        ),
+                        const SizedBox(
+                          height: 75,
+                          width: 225,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "A clash between Pep Guardiola and Carlo Ancelotti.",
+                                style: TextStyle(fontWeight: FontWeight.w600),
+                                textAlign: TextAlign.justify,
+                              ),
+                              SizedBox(
+                                height: 10,
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.calendar_today,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "12 Sep 2022",
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12),
+                                  ),
+                                  SizedBox(
+                                    width: 45,
+                                  ),
+                                  Icon(
+                                    Icons.access_time,
+                                    color: Colors.grey,
+                                    size: 15,
+                                  ),
+                                  SizedBox(
+                                    width: 10,
+                                  ),
+                                  Text(
+                                    "5 Min read",
+                                    style: TextStyle(
+                                        color: Colors.grey, fontSize: 12),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
