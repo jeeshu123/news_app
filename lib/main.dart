@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
                       child: Row(
                         children: [
                           Stack(
+                            //Stack widget is used to overlay the icon on top of the image.
                             children: [
                               Container(
                                 height: 400,
@@ -103,6 +104,7 @@ class MyApp extends StatelessWidget {
                                 ),
                               ),
                               Positioned(
+                                //Position widget is used to specify the postion of the icon on the container.
                                 top: 10,
                                 right: 10,
                                 child: IconButton(
